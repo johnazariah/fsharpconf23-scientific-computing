@@ -1,6 +1,6 @@
 ﻿open IsingModel.IsingModel2D
-// SolveMetropolis 2 5_000_000
-// SolveMetropolis 2.269 30_000_000
+SolveMetropolis 2.0<Kelvin> 5_000_000
+exit(1)
 
 open MachineLearning.GradientDescent
 let buildScaledTrainingSet n : TrainingSetRow[] =

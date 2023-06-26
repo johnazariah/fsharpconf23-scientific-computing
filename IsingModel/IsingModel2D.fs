@@ -2,7 +2,7 @@
 
 module IsingModel2D =
 
-    [<Measure>] type Temperature
+    [<Measure>] type Kelvin
     [<Measure>] type Energy
 
     // This is the size of the 2D lattice.
@@ -110,7 +110,7 @@ module IsingModel2D =
 
             sb.ToString()
 
-    let SolveMetropolis (T : float<Temperature>) (num_iterations : int) =
+    let SolveMetropolis (T : float<Kelvin>) (num_iterations : int) =
         let mutable lattice = Ising2D.random()
         let mutable flips = 0
 
